@@ -1,7 +1,7 @@
 # Projekt_BSI by Rafał Ubermanowicz, Marcin Rozkwitalski
 Projekt for BSI classes PJATK-Gdańsk 2020  (Maintenance and Reliability)
 
-Our Tasks:
+Basic Calculator for this Tasks (formulas where given in PDF-Files):
 
 1. California Instruments, Find FR(%) and FR(N) of produced chips (FR = Fail Rate)
 2. Expected Failures per month with the same chips as in 1.
