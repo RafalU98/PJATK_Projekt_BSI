@@ -3,8 +3,6 @@
 //          Date: 21.11.2020
 //          Project for BSI Classes in PJATK-University
 
-package pl.edu.pjwstk.BSICalc;
-
 import java.util.Scanner;
 
 public class Main {
