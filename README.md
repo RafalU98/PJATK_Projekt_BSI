@@ -1,6 +1,6 @@
 # Projekt_BSI
 # Authors: Rafał Ubermanowicz, Marcin Rozkwitalski
-# Projekt for BSI classes PJATK-Gdańsk 2020  (Maintenance and Reliability)
+Projekt for BSI classes PJATK-Gdańsk 2020  (Maintenance and Reliability)
 
 Our Tasks:
 
