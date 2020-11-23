@@ -3,6 +3,8 @@
 //          Project for BSI Classes in PJATK-University
 //          Source:  Problem 1 in ch17pp.doc
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -34,9 +36,11 @@ public class ProcessorFR {
             downTime += testTime - (scanner.nextDouble());
         }
 
+        NumberFormat formatter = new DecimalFormat("#.#######");
+
         System.out.println("The Failure Rate is: " + failed / tested + "%");
-        System.out.println("The Failures per hour are: " + (failed / ((testTime*tested) - downTime)));
-        System.out.println("The average work time of a processor before failing is : " + 1 / (failed / ((testTime*tested) - downTime)));
+        System.out.println("The Failures per hour are: " + formatter.format(failed / ((testTime*tested) - downTime)));
+        System.out.println("The average work time of a processor before failing is : " + (double) Math.round(1 / (failed / ((testTime*tested) - downTime))*100)/100);
 
         System.out.println("Do You want to go back to the Main Menu (Enter 1)");
         menu = scanner.nextInt();
@@ -44,4 +48,3 @@ public class ProcessorFR {
         if (menu == 1) Main.TaskOptions();
     }
 }
-
