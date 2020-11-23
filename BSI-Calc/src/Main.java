@@ -20,8 +20,8 @@ public class Main {
         FindingTimeOfTestingSamples FindingTimeOfTestingSamples = new FindingTimeOfTestingSamples();
 
         System.out.println("1. California Instruments, Find FR(%) and FR(N) of produced chips (FR = Fail Rate)");
-        System.out.println("2. Expected Failures per month with the same chips as in 1.");
-        System.out.println("3. Finding the reliability of a system by chaining different reliability blocks");
+        System.out.println("2. Expected Failures of processors per month with given failures per hour.");
+        System.out.println("3. Count the reliability of a system by chaining different reliability blocks");
         System.out.println("4. Finding Test Life with given miles of life , reliability and confidence");
         System.out.println("5. Finding out how long you need to test x samples to find out the Goal Life of them\n");
 
