@@ -25,31 +25,32 @@ public class SystemReliability {
         sum = decimal;
         lastAdded = decimal;
 
-        System.out.println("Do You want to enter another system? (Enter 1) if no (Enter 0) ");
-        choose1 = scanner.nextInt();
-        if(choose1 == 1) {
-            do {
-                System.out.println("Please enter the reliability of the Next System");
-                decimal = scanner.nextDouble();
-                if (decimal > 0.99) {
-                    decimal = decimal / 100;
-                }
-                System.out.println("Choose if you want to add the system vertically or horizontally\n Choose 1 for: Horizontally\n Choose 2 for: Vertically");
-                choose = scanner.nextInt();
-                if (choose == 1) {
-                    sum *= decimal;
-                    lastAdded = decimal;
-                } else if (choose == 2) {
-                    sum += decimal * (1 - lastAdded);
-                    lastAdded = decimal;
-                } else {
-                    System.out.println("You can only choose 1 or 2");
-                }
-                System.out.println("Do You want to enter another system? (Enter 1) if no (Enter 0) ");
-                choose1 = scanner.nextInt();
+        boolean next = true;
+
+        while (next) {
+            System.out.println("Please enter the reliability of the Next System");
+            decimal = scanner.nextDouble();
+            if (decimal > 0.99) {
+                decimal = decimal / 100;
             }
-            while (choose1 == 1);
+            System.out.println("Choose if you want to add the system vertically or horizontally\n Choose 1 for: Horizontally\n Choose 2 for: Vertically");
+            choose = scanner.nextInt();
+            if (choose == 1) {
+                sum *= decimal;
+                lastAdded = decimal;
+            } else if (choose == 2) {
+                sum += decimal * (1 - lastAdded);
+                lastAdded = decimal;
+            } else {
+                System.out.println("You can only choose 1 or 2");
+            }
+            System.out.println("Do You want to enter another system? (Enter 1) if no (Enter 0) ");
+            choose1 = scanner.nextInt();
+            if (choose1 == 0){
+                next = false;
+            }
         }
+
 
         System.out.println("The Reliability of the whole system you have build is: " + sum + ", which is: " + sum * 100 + "%.");
 
