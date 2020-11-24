@@ -16,7 +16,7 @@ Basic Calculator for this Tasks (formulas where given in PDF-Files):
          Therefore: FR(N) = 6/148,000 = 0.0000405 failures/hour
          MTBF = 1/FR(N) = 24,691 hours //avg work time before fail
          
-# 2. Expected Failures of processors per month with given failures per hour.
+# 2. Expected Failures of processors per month with failures per hour.
          If 300 of these chips are used in building a mainframe computer, how many failures of the computer can be expected per month?
          
          
