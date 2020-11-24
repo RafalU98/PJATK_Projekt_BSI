@@ -1,9 +1,9 @@
 # Projekt_BSI by Rafał Ubermanowicz, Marcin Rozkwitalski
-Projekt for BSI classes PJATK-Gdańsk 2020  (Maintenance and Reliability)
 
+Projekt for BSI classes PJATK-Gdańsk 2020  (Maintenance and Reliability)
 Basic Calculator for this Tasks (formulas where given in PDF-Files):
 
-# 1. California Instruments, Find FR(%) and FR(N) of produced chips (FR = Fail Rate)
+# 1. Find FR(%) and FR(N) of produced chips (FR = Fail Rate)
         California Instruments, Inc., produces 3,000 computer chips per day.
         Three hundred are tested for a period of 500 operating hours each.
         During the test, six failed: two after 50 hours, two at 100 hours, one at 300 hours, and one at 400 hours.
