@@ -1,6 +1,6 @@
 # Projekt_BSI by Rafał Ubermanowicz, Marcin Rozkwitalski
 
-## Basic Calculator for this Tasks (formulas where given in PDF-Files):
+### Basic Calculator for this Tasks (formulas where given in PDF-Files):
 
 #### 1. Find FR(%) and FR(N) of produced chips (FR = Fail Rate)
         California Instruments, Inc., produces 3,000 computer chips per day.
@@ -19,11 +19,28 @@
 #### 2. Expected Failures of processors per month with failures per hour.
          If 300 of these chips are used in building a mainframe computer, how many failures of the computer can be expected per month?
          
+         Converting the units of FR(N) to months:
+         FR(N) = 0.0000405 * 24 hours/day * 30 days/month = 0.029 failures/month
+         FR(N) for the 300 units:
+         FR(N) = 0.029 failures/month * 300 units = 8.75 failures/month
+         MTBF for the mainframe:
+         MTBF = 1/FR(N) = 1/8.75 = 0.11 month = 0.11 * 30 = 3.4 days
+         Calculation for MTBF assumes that failure of any one chip brings down entire system.
          
          
-# 3. Count the reliability of a system by chaining different reliability blocks
-# 4. Finding Test Life with given miles of life , reliability and confidence
-# 5. Finding out how long you need to test x samples to find out the Goal Life of them
+#### 3. Count the reliability of a system by chaining different reliability blocks
+          Example System:
+    [0,92]              [0,95]
+      |                   |
+      |                   |
+    [0,95]----[0,98]----[0,90]
+    
+    Reliability: 0,95 + 0,92 * (1 - 0,95) * 0,98 * 0,90 + 0,95 * (1 - 0,90) == 0,966 -> 96,6%
+    
+    
+
+#### 4. Finding Test Life with given miles of life , reliability and confidence
+#### 5. Finding out how long you need to test x samples to find out the Goal Life of them
 
 
 
