@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class SystemReliability {
 
     Scanner scanner = new Scanner(System.in);
-    int choose, menu;
+    int choose, choose1, menu;
     double decimal,sum, lastAdded;
 
     public void main() {
@@ -19,33 +19,39 @@ public class SystemReliability {
 
         System.out.println("Please enter the reliability of the First system in decimal e.g. 0.95 or 0.91");
         decimal = scanner.nextDouble();
+        if (decimal > 0.99) {
+            decimal = decimal / 100;
+        }
         sum = decimal;
         lastAdded = decimal;
 
-        // todo for loop & try-catch
-        do {
-            System.out.println("Do You want to enter another system? (Enter 1) if no (Enter 0) ");
-
-            System.out.println("Please enter the reliability of the Next System");
-            decimal = scanner.nextDouble();
-
-            System.out.println("Choose if you want to add the system vertically or horizontally\n Choose 1 for: Horizontally\n Choose 2 for: Diagonally");
-            choose = scanner.nextInt();
-            if (choose == 1) {
-                sum *= decimal;
-                lastAdded = decimal;
-            } else if (choose == 2) {
-                sum += decimal * (1 - lastAdded);
-                lastAdded = decimal;
-            } else {
-                System.out.println("You can only choose 1 or 2");
+        System.out.println("Do You want to enter another system? (Enter 1) if no (Enter 0) ");
+        choose1 = scanner.nextInt();
+        if(choose1 == 1) {
+            do {
+                System.out.println("Please enter the reliability of the Next System");
+                decimal = scanner.nextDouble();
+                if (decimal > 0.99) {
+                    decimal = decimal / 100;
+                }
+                System.out.println("Choose if you want to add the system vertically or horizontally\n Choose 1 for: Horizontally\n Choose 2 for: Vertically");
+                choose = scanner.nextInt();
+                if (choose == 1) {
+                    sum *= decimal;
+                    lastAdded = decimal;
+                } else if (choose == 2) {
+                    sum += decimal * (1 - lastAdded);
+                    lastAdded = decimal;
+                } else {
+                    System.out.println("You can only choose 1 or 2");
+                }
+                System.out.println("Do You want to enter another system? (Enter 1) if no (Enter 0) ");
+                choose1 = scanner.nextInt();
             }
-
+            while (choose1 == 1);
         }
-        while (true)
-        // todo end of loop
 
-        System.out.println("The Reliability of the whole system you have buid is: " + sum + ", which is: " + sum * 100 + "%.");
+        System.out.println("The Reliability of the whole system you have build is: " + sum + ", which is: " + sum * 100 + "%.");
 
         System.out.println("Do You want to go back to the Main Menu (Enter 1)");
         menu = scanner.nextInt();

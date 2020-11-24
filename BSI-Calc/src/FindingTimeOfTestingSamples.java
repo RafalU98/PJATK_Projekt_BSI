@@ -1,11 +1,9 @@
 /*
     Author: Marcin Rozkwitalski
+    Source: Exercise 4.3 in QITT03 based on Example 2.1
 
-    Exercise 4.3 based on Example 2.1
-    How long should you test 10 samples of a component which is designed to have 1500
-    hours at 80% confidence and 90% reliability? Assume b = 2 (weibull)
-
-    Ans: 1,900 x 1.5 = 2,850 hours.
+    Explained in README:
+    https://github.com/RafalU98/PJATK_Projekt_BSI/blob/main/README.md#5-finding-out-how-long-you-need-to-test-x-samples-to-find-out-the-goal-life-of-them
  */
 import java.util.Scanner;
 

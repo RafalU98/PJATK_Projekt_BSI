@@ -1,11 +1,9 @@
 /*
     Author: Marcin Rozkwitalski
+    Source: Exercise 4.1 in QITT03 based on Example 2.1
 
-    Exercise 4.1 based on Example 2.1
-    Design a test to demonstrate 100,000 miles life at 95% reliability and 60% confidence.
-    The available sample size is 6.(Assume b=2)
-
-    Ans: Test life 179,000 miles.
+    Explained in README:
+    https://github.com/RafalU98/PJATK_Projekt_BSI/blob/main/README.md#4-finding-test-life-with-given-miles-of-life--reliability-and-confidence
  */
 import java.util.Scanner;
 
