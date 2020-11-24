@@ -1,8 +1,10 @@
-//          Authors: Rafał Ubermanowicz
-//          Date: 21.11.2020
-//          Project for BSI Classes in PJATK-University
-//          Source:  Problem 2 in ch17pp.doc
+/*
+    Author: Rafał Ubermanowicz
+    Source:  Problem 2 in ch17pp.doc
 
+    Explained in README:
+    https://github.com/RafalU98/PJATK_Projekt_BSI/blob/main/README.md#2-expected-failures-of-processors-per-month-with-given-failures-per-hour
+ */
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -14,7 +16,7 @@ public class ProcessorFRoverTime {
 
     public void main() {
 
-        System.out.println("Expected Failures of processors per month with given failures per hour.\n");
+        System.out.println("Expected Failures of processors per month with failures per hour.\n");
 
 
         try {
