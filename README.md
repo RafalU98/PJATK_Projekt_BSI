@@ -1,6 +1,5 @@
 # Projekt_BSI by Rafał Ubermanowicz, Marcin Rozkwitalski
 
-Projekt for BSI classes PJATK-Gdańsk 2020  (Maintenance and Reliability).
 Basic Calculator for this Tasks (formulas where given in PDF-Files):
 
 # 1. Find FR(%) and FR(N) of produced chips (FR = Fail Rate)
@@ -17,10 +16,14 @@ Basic Calculator for this Tasks (formulas where given in PDF-Files):
          Therefore: FR(N) = 6/148,000 = 0.0000405 failures/hour
          MTBF = 1/FR(N) = 24,691 hours //avg work time before fail
          
-2. Expected Failures per month with the same chips as in 1.
-3. Finding the reliability of a system by chaining different reliability blocks
-4. Finding Test Life with given miles of life , reliability and confidence
-5. Finding out how long you need to test x samples to find out the Goal Life of them
+# 2. Expected Failures of processors per month with given failures per hour.
+         If 300 of these chips are used in building a mainframe computer, how many failures of the computer can be expected per month?
+         
+         
+         
+# 3. Count the reliability of a system by chaining different reliability blocks
+# 4. Finding Test Life with given miles of life , reliability and confidence
+# 5. Finding out how long you need to test x samples to find out the Goal Life of them
 
 
 
