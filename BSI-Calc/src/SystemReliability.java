@@ -1,50 +1,51 @@
 /*
-    Finding the reliability of a system by chaining different reliability blocks
+    Author: Rafał Ubermanowicz, Marcin Rozkwitalski
+    Source:  Problem 3 in ch17pp.doc
 
-    example:
-
-    [0,92]              [0,95]
-      |                   |
-      |                   |
-    [0,95]----[0,98]----[0,90]
-
-
-     0,95 + 0,92 * (1 - 0,95) * 0,98 * 0,90 + 0,95 * (1 - 0,90) == 0,966 -> 96,6%
-
-*/
-
-
-//Dodawanie horizontalli    robimy razy
-
-//dodawanie diagonalli    robimy +  i gorne * 1- dolne
-
+    Explained in README:
+    https://github.com/RafalU98/PJATK_Projekt_BSI/blob/main/README.md#3-count-the-reliability-of-a-system-by-chaining-different-reliability-blocks
+ */
 
 import java.util.Scanner;
 
 public class SystemReliability {
-    public void main() {
-        Scanner s = new Scanner(System.in);
 
+    Scanner scanner = new Scanner(System.in);
+    int choose, menu;
+    double decimal,sum;
+
+    public void main() {
         System.out.println("3. Finding the reliability of a system by chaining different reliability blocks");
-        double decimal = 0;
+
         System.out.println("Please enter the reliability of the First system in decimal e.g. 0.95 or 0.91");
-        decimal = s.nextDouble();
+        decimal = scanner.nextDouble();
+        sum = decimal;
+
+        // todo for loop & try-catch
+
+        System.out.println("Do You want to enter another system? (Enter 1) if no (Enter 0) ");
 
         System.out.println("Please enter the reliability of the Next System");
-        decimal = s.nextDouble();
+        decimal = scanner.nextDouble();
 
-        int choose = 0;
-        System.out.println("Choose if you want to add the system diagonally or horizontally/n" +
-                "1. Horizontally" +
-                "2. Diagonally");
-        choose = s.nextInt();
+        System.out.println("Choose if you want to add the system vertically or horizontally\n Choose 1 for: Horizontally\n Choose 2 for: Diagonally");
+        choose = scanner.nextInt();
+        if (choose == 1){
+            sum *= decimal;
+        }
+        else if (choose == 2){
+            sum += decimal; //todo *(1 - last- added);
+        }else{
+            System.out.println("You can only choose 1 or 2");
+        }
 
-        if (choose == 1)
+        // todo end of loop
 
-        //metoda hori
+        System.out.println("The Reliability of the whole system you have buid is: " + sum + ", which is: " + sum * 100 + "%.");
 
-        //metoda diag
+        System.out.println("Do You want to go back to the Main Menu (Enter 1)");
+        menu = scanner.nextInt();
 
-        System.out.println();
+       if (menu == 1) Main.TaskOptions();
     }
 }
