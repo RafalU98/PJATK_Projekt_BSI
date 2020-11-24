@@ -29,13 +29,13 @@
          
          
 #### 3. Count the reliability of a system by chaining different reliability blocks
-          Example System:
-    [0,92]              [0,95]
-      |                   |
-      |                   |
-    [0,95]----[0,98]----[0,90]
+               Example System:
+         [0,92]              [0,95]
+           |                   |
+           |                   |
+         [0,95]----[0,98]----[0,90]
     
-    Reliability: 0,95 + 0,92 * (1 - 0,95) * 0,98 * 0,90 + 0,95 * (1 - 0,90) = 0,966 -> 96,6%
+         Reliability: 0,95 + 0,92 * (1 - 0,95) * 0,98 * 0,90 + 0,95 * (1 - 0,90) = 0,966 -> 96,6%
     
     
 
