@@ -18,7 +18,6 @@ public class ProcessorFRoverTime {
 
         System.out.println("Expected Failures of processors per month with failures per hour.\n");
 
-
         try {
             System.out.println("Enter the number of processors tested: (Enter a whole number) ");
             processorTested = scanner.nextInt();
