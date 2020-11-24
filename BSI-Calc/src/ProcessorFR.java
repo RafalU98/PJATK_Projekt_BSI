@@ -1,8 +1,10 @@
-//          Authors: Rafał Ubermanowicz
-//          Date: 21.11.2020
-//          Project for BSI Classes in PJATK-University
-//          Source:  Problem 1 in ch17pp.doc
+/*
+    Author: Rafał Ubermanowicz, Marcin Rozkwitalski
+    Source:  Problem 3 in ch17pp.doc
 
+    Explained in README:
+    https://github.com/RafalU98/PJATK_Projekt_BSI/blob/main/README.md#3-count-the-reliability-of-a-system-by-chaining-different-reliability-blocks
+ */
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.InputMismatchException;
@@ -15,7 +17,7 @@ public class ProcessorFR {
     int menu;
 
     public void main() {
-        System.out.println("1. California Instruments, Find FR(%) and FR(N) of produced chips (FR = Fail Rate)\n");
+        System.out.println("1. Find FR(%) and FR(N) of produced chips (FR = Fail Rate)\n");
 
         try {
             System.out.println("How many processors did you test: (Enter a whole number)");
