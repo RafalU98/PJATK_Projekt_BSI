@@ -1,8 +1,8 @@
 # Projekt_BSI by Rafał Ubermanowicz, Marcin Rozkwitalski
 
-Basic Calculator for this Tasks (formulas where given in PDF-Files):
+## Basic Calculator for this Tasks (formulas where given in PDF-Files):
 
-# 1. Find FR(%) and FR(N) of produced chips (FR = Fail Rate)
+### 1. Find FR(%) and FR(N) of produced chips (FR = Fail Rate)
         California Instruments, Inc., produces 3,000 computer chips per day.
         Three hundred are tested for a period of 500 operating hours each.
         During the test, six failed: two after 50 hours, two at 100 hours, one at 300 hours, and one at 400 hours.
@@ -16,7 +16,7 @@ Basic Calculator for this Tasks (formulas where given in PDF-Files):
          Therefore: FR(N) = 6/148,000 = 0.0000405 failures/hour
          MTBF = 1/FR(N) = 24,691 hours //avg work time before fail
          
-# 2. Expected Failures of processors per month with failures per hour.
+### 2. Expected Failures of processors per month with failures per hour.
          If 300 of these chips are used in building a mainframe computer, how many failures of the computer can be expected per month?
          
          
